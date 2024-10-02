@@ -69,51 +69,6 @@
 
 ## Restore a Computer after a Kernel Error
 
-1. Cause a BSOD Error
- type regedit
-The Registry Editor console is displayed.
-
-Navigate to the following registry path:
-
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
-
-Now click the ACPI node to display the contents of the folder on the details pane at the right.
-
-On the details pane, locate Start. Notice that the current data value for the Start parameter is set to 0.
-
-Right-click Start and select Modify.
-On the Edit DWORD (32-bit) Value dialog box, click in the Value data text box and type 5.
-
-Click OK to save changes and exit the dialog box.
-
-Once the registry settings are modified, you need to restart the system to enable the changed settings to take effect.
-Please wait while Windows continues to boot up.
-
-This will take a few seconds.
-
-Windows Server will continue to load the device drivers.
-Then you will get a blue screen of death (BSOD) because the ACPI device driver startup value was changed to an incorrect value.
-
-Notice the screen indicates that Windows will restart by itself.
-Once the BSOD is displayed, the system tries to restart. If the restart fails, Windows Server enters into the Automatic Repair mode. Here you can select the troubleshooting mode and specify system recovery methods.
-After the error screen appears the second time, Windows will restart and automatically enter into the repair mode.
-
-Choose an option screen is displayed. Select the Troubleshoot option.
-On the Advanced options screen, select the System Image Recovery option.
-Once the login credentials for the user account are verified, the Re-image your computer wizard appears.
-
-Notice that the Select a system image backup page shows information about the recent system image backup of this computer. You will use the most recent system image.
-
-Click Next.
-On the Choose additional restore options page, you can specify any particular configuration settings for restoring the system.
-
-For this task, there are no particular restoration settings. Therefore, do not select any options on this page and click Next.
-The system indicates additional information about the system image backup that you are about to restore.
-
-Click Finish.
-
-## Restore a Computer after a Kernel Error
-
 1. **Cause a BSOD Error**
 
 - Type `regedit` to open the Registry Editor console.
