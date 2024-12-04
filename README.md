@@ -89,3 +89,32 @@
 - On the `Select a system image backup` page, select the most recent system image and click `Next`.
 - On the `Choose additional restore options` page, do not select any options (as there are no particular restoration settings for this task) and click `Next`.
 - Review the additional information about the system image backup that you are about to restore, then click `Finish`.
+
+## The user's input language keeps changing when switching between applications.
+
+### Resolution
+1. Go to **Settings > Time & Language > Language & region**.
+2. Scroll down and select **Typing**.
+3. Under **Advanced keyboard settings**, uncheck **"Let me use a different input method for each app window"**.
+4. Check **"Override for the default input method"** and select a preferred language.
+
+## The user cannot print or scan documents after restarting the router.
+
+### Resolution
+Check printing functionality after each step:
+1. Ensure the printer is **On**, then turn it **Off** and back **On** after 10 seconds.
+2. Verify the **cable or WiFi connection** and ensure the printer is connected to the proper network (e.g., 2.4GHz or 5GHz).
+3. Reinstall the printer software if necessary.
+
+## A recurring error message, "USB device not recognized," is displayed despite no device being connected.
+
+### Resolution
+Refer to case #12345 and omit already completed steps. Then:
+1. Shut down the laptop completely, disconnect it from power, and restart after a minute.
+2. Update USB and Windows drivers:
+   - Open **Device Manager** and expand **Universal Serial Bus controllers**.
+   - Update or uninstall/reinstall drivers for USB Root Hub entries.
+3. Reset USB ports:
+   - In **Device Manager**, enable **Show hidden devices**, expand **Universal Serial Bus controllers**, and uninstall any devices labeled as **Unknown device**. Restart the laptop.
+4. Check for hardware issues, including visible damage or dust.
+5. Update the BIOS if necessary.
